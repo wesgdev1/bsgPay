@@ -1,16 +1,16 @@
 import Link from "next/link";
+import styles from "./Header.module.css";
 
 export const Header = () => {
-  console.log("Header");
   return (
     <header>
       <nav>
-        <ul>
+        <ul className={styles.Header__list}>
           <li>
             <Link href="/">Home</Link>
           </li>
           <li>
-            <Link href="/store">Store</Link>
+            <Link href="/store">Tarjetas Virtuales</Link>
           </li>
         </ul>
       </nav>
